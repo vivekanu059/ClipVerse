@@ -1,0 +1,66 @@
+.dashboard {
+  padding: 24px;
+  max-width: 900px;
+  margin: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+.dashboard h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.card-value {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.health {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.health.low {
+  background: #ffe5e5;
+  color: #b00020;
+}
+
+.health.good {
+  background: #fff4cc;
+  color: #8a6d00;
+}
+
+.health.excellent {
+  background: #e6f7ef;
+  color: #0b6b3a;
+}
